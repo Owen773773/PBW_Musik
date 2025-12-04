@@ -1,0 +1,154 @@
+/* Anda mungkin perlu menyesuaikan font-family agar terlihat lebih mirip */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; 
+}
+
+/* --- Bagian Utama Header --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 10px 20px;
+    height: 60px; 
+    border-bottom: 1px solid #282828; 
+}
+
+/* --- Bagian Logo dan Nama Aplikasi --- */
+.logo-section {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.music-icon {
+    color: #1ed760; /* Warna hijau neon khas aplikasi musik */
+    margin-right: 5px;
+    font-size: 1.8em;
+}
+
+.app-name {
+    font-weight: 600;
+}
+
+/* --- Bagian Navigasi Tengah --- */
+.nav-links {
+    display: flex;
+    gap: 30px; /* Jarak antar link navigasi */
+}
+
+.nav-item {
+    color: #a7a7a7; /* Warna teks navigasi non-aktif */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 5px 5px;
+    transition: color 0.3s;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #ffffff; /* Warna teks saat hover atau aktif */
+    border-radius: 10px;
+    background-color: oklch(.278 .033 256.848);
+    border-radius: 10px;
+}
+
+/* --- Bagian Aksi Pengguna (Kanan) --- */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Kotak Profil Pengguna */
+.user-profile {
+    display: flex;
+    align-items: center;
+    background-color: #1a1e26; /* Warna latar belakang gelap untuk kotak profil */
+    padding: 8px 15px;
+    border-radius: 30px; /* Border radius yang sangat tinggi untuk bentuk pill */
+    font-size: 1em;
+}
+
+.user-profile .icon {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+.username {
+    margin-right: 10px;
+}
+
+/* Badge Admin (Warna Hijau) */
+.admin-badge {
+    background-color: #1ed760; /* Hijau terang */
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 20px; /* Bentuk pill/kapsul */
+}
+
+.logout-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: color 0.3s;
+}
+
+.logout-icon{
+    width: 32px;
+    height: 28px;
+    filter: invert(0.8);
+    padding-left: 5px;
+}
+
+.logout-item:hover{
+    background-color: rgb(53, 67, 72);
+    border-radius: 40px;
+}
+
+.logout-item:hover .logout-icon {
+    filter: invert(1); 
+}
+
+.nav-icon{
+    width: 32px;
+    height: 28px;
+    filter: invert(1);
+}
+
+.nav-text{
+    font-size: 1.2em;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.admin-container{
+    background-color: #0d542b;
+    height: 60px; 
+    border-bottom: 1px solid #05df72;
+}
+
+.admin-item{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.admin-icon{
+    width: 46px;
+    height: 32px;
+    filter: invert(1);
+}
