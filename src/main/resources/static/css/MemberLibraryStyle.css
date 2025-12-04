@@ -1,0 +1,110 @@
+body {
+    background: #020409;
+    color: #e8efff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+/*Tombol Upload*/
+.upload {
+    display: flex;
+    background: #1fd26a;
+    color: black;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+/* Tombol kategori */
+.tabs {
+    display: flex;
+    gap: 20px;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.tab.active {
+    background: #1fd26a;
+    color: black;
+}
+
+.tab.inactive {
+    background: #0d1627;
+    color: #cbd5e1;
+}
+
+/* Container koleksi */
+.koleksi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 20px;
+}
+
+/* Kartu lagu */
+.card {
+    width: 230px;
+    background: #0d1627;
+    padding: 18px;
+    border-radius: 18px;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    background: #141f33;
+    transform: translateY(-3px);
+}
+
+.cover {
+    width: 100%;
+    height: 180px;
+    background: #000;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    background-size: cover;
+    background-position: center;
+}
+
+.song-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.song-artist {
+    font-size: 14px;
+    color: #a7b6ce;
+}
+
+.song-album {
+    font-size: 14px;
+    color: #738395;
+}

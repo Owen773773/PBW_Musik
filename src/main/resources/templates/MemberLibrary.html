@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Collections</title>
+    <link rel="stylesheet" href="../static/css/MemberLibraryStyle.css">
+</head>
+
+<body>
+    <h1>Library</h1>
+
+    <!-- Tombol kategori -->
+    <div class="actions">
+        <div class="tabs">
+            <div class="tab active">
+                ❤️ Lagu yang Disukai
+            </div>
+    
+            <div class="tab inactive">
+                ⬆️ Lagu yang Saya Upload 
+                <span>2</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kartu Lagu (Looping Thymeleaf) -->
+    <div class="koleksi">
+        <!-- Jika list kosong, tampilkan pesan -->
+        <div th:if="${songs.isEmpty()}">
+            <p style="color:#94a3b8;">Tidak ada lagu.</p>
+        </div>
+
+        <!-- Jika ada isi, looping setiap lagu -->
+        <div class="card" th:each="song : ${songs}">
+            <!-- gambar cover -->
+            <div class="cover"
+                th:style="'background-image: url(' + ${song.coverUrl} + ');'">
+            </div>
+
+            <div class="song-title" th:text="${song.title}">Midnight Drive</div>
+
+            <div class="song-artist" th:text="${song.artist}">
+                The Midnight Riders
+            </div>
+
+            <div class="song-album" th:text="${song.album}">
+                Night Highway
+            </div>
+        </div>
+    </div>
+</body>
+</html>
