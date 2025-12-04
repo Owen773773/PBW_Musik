@@ -2,6 +2,7 @@ package com.pbw.MusicApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class MusicAppApplication {
@@ -10,4 +11,8 @@ public class MusicAppApplication {
 		SpringApplication.run(MusicAppApplication.class, args);
 	}
 
+	@GetMapping
+	public String login() {
+		return "";
+	}
 }
