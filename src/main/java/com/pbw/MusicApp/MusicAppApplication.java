@@ -11,8 +11,8 @@ public class MusicAppApplication {
 		SpringApplication.run(MusicAppApplication.class, args);
 	}
 
-	@GetMapping
+	@GetMapping("/login")
 	public String login() {
-		return "";
+		return "login";
 	}
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+<div class =container>
+
+                <form class="login-form" th:action="@{/login}" method="post">
+
+                <label for="account">Enter your account</label>
+                <input type="text" id="account" name="username"
+                       class="input-field" placeholder=" " required>
+
+                <label for="password">Enter your Password</label>
+                <input type="password" id="password" name="password"
+                       class="input-field" placeholder=" " required>
+
+                <button type="submit" class="btn btn-submit">Submit</button>
+
+                <a th:href="@{/forgot-password}" class="forgot-password">
+                    Forgot password?
+                </a>
+            </form>
+</div>
+    
+</body>
+</html>
